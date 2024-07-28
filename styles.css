@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: url(images/background.png) center/cover fixed no-repeat;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+.main-container {
+	background: rgb(225, 190, 231);
+	width: 96%;
+	max-width: 60rem;
+	margin: 1rem auto;
+	padding: 0.1rem;
+	border-radius: 12px;
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.second-container {
+	background: rgb(206, 147, 216);
+	border-radius: 12px;
+	padding: 0.2rem;
+}
+
+.main-header {
+	margin-bottom: 1rem;
+	border-radius: 12px;
+	padding: 1rem;
+	background: #e1bee7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-container {
+	box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	position: relative;
+	z-index: 1;
+	background: #ba68c8;
+	margin: 0;
+}
+
+.header-image {
+	width: 100%;
+	border-radius: 12px;
+	vertical-align: bottom;
+}
+
+.header-image__caption {
+	text-align: center;
+	font-style: italic;
+	color: #f3e5f5;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.main-title {
+	width: 90%;
+	margin: 0;
+	border-radius: 0 0 12px 12px;
+	padding: 1rem;
+	text-align: center;
+	background: #f3e5f5;
+	color: black;
+	font-size: 1.7rem;
+}
+
+.facts {
+	background: #ba68c8;
+	border-radius: 12px;
+	padding: 0.3rem;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.fact {
+	background: #e1bee7;
+	padding: 0.8rem;
+	border-radius: 12px;
+	font-size: 0.9rem;
+}
+
+.fact__title {
+	color: #4d2a53;
+	font-size: 1.2rem;
+}
+
+.germ-name {
+	font-weight: bold;
+}
+
+.main-footer {
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.wikipedia-link {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.wikipedia-link:hover,
+.wikipedia-link:active {
+	border-bottom: 2px solid black;
+}
+
+@media (min-width: 40rem) {
+	.main-container {
+		padding: 0.2rem;
+	}
+
+	.second-container {
+		padding: 0.8rem;
+	}
+
+	.main-header{
+		padding: 1rem;
+		flex-direction: row;
+	}
+
+	.image-container {
+		box-shadow: 4px 0 4px rgba(0,0,0,0.5);
+		max-width: 26rem;
+	}
+
+	.main-title {
+		border-radius: 0 12px 12px 0;
+	}
+
+	.facts {
+		padding: 1rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 1fr;
+	}
+
+	.fact {
+		padding: 1rem;
+	}
+}
